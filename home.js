@@ -34,3 +34,15 @@ function bookTickets(movie, numTickets){
 }
 bookTickets(movie, 4);
 bookTickets(movie, 6);
+
+//Unique Numbers Array
+function UniqueNum(arr){
+    let uniarr = [];
+    for(let num of arr){
+        if(!uniarr.includes(num)){
+            uniarr.push(num);
+        }
+    }
+    return uniarr;
+}
+console.log(UniqueNum([1,2,3,4,5,2,32,,1]));
